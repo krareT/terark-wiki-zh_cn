@@ -2,8 +2,8 @@
 
 Terark Inc. 中文名“奇简软件（北京）有限公司”。
 Terark 的产品包括：
-- [https://github.com/Terark/terark-db](terark-db)
-- [https://github.com/Terark/terark-zip-rocksdb](terark-zip-rocksdb)
+- [terark-db](https://github.com/Terark/terark-db)
+- [terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb)
 
 ## terark 核心工具集
 
@@ -30,8 +30,8 @@ root/samples/src| |
 
 |名称|功能描述  |
 -----|-----|
-[nlt_build.exe](tools/bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索<br>[https://github.com/Terark/terark-zip-rocksdb](terark-zip-rocksdb)的索引(key)使用了该算法|
-[zbs_build.exe](tools/bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并按记录ID随机提取每条记录<br>[https://github.com/Terark/terark-zip-rocksdb](terark-zip-rocksdb)的 value 压缩使用了该算法|
+[nlt_build.exe](tools/bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索<br>[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb)的索引(key)使用了该算法|
+[zbs_build.exe](tools/bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并按记录ID随机提取每条记录<br>[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb)的 value 压缩使用了该算法|
 
 
 其他命令行工具使用说明，可参见各命令的 usage help，详细说明我们会逐渐在该文档中完善。
