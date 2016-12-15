@@ -28,7 +28,7 @@ root/samples/src| |
 ### 核心命令行工具
 为了便于编译和各平台统一，即使在 Linux/Mac 中，这些命令行工具也包含 .exe 后缀名。
 
-|名称(详细描述链接)|功能描述  |
+|名称|功能描述  |
 -----|-----|
 [nlt_build.exe](tools/bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索|
 [zbs_build.exe](tools/bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并随机提取每条记录|
