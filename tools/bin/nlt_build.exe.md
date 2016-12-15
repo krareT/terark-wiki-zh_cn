@@ -32,7 +32,6 @@ If Input-TXT-File is omitted, use stdin
 正则表达式搜索|最快O(regex\_len)<br>最慢O(all\_key\_len*regex\_len)|不同的正则表达式，时间复杂度差异较大<br>正则表达式头部部不确定性越大（例如.*abc），耗时越大|
 
 ## 命令行详解
-
 | 选项 | 说明 |
 -----|-----|
 -M | 最长片段尺寸，一般不需要指定|
