@@ -19,11 +19,11 @@ root = pkg/terark-fsa_all-Linux-x86_64-g++-**VERSION**-bmi2-**X**<br>
 |目录|说明|
 --------|---------|
 root/bin| **核心命令行工具** |
-root/lib| |
+root/lib| 动态库 |
 root/include| 暂时用不上 |
 root/samples| |
 root/samples/bin| 有一些示例和性能测试工具|
-root/samples/src| |
+root/samples/src| 示例代码 |
 
 ### 核心命令行工具
 为了便于编译和各平台统一，即使在 Linux/Mac 中，这些命令行工具也包含 .exe 后缀名。
