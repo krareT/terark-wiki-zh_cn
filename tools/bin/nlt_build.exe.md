@@ -19,6 +19,19 @@ If Input-TXT-File is omitted, use stdin
 
 ## 简要说明
 
+输入文件是文本，每行包含一个 key，重复 key 在输出的 trie 树中会被消重（但build过程中仍会占据重复的内存）。
+
+如果总共有n个不同的key，生成的 trie 树中，每个key对应一个ID，ID的范围是 `0` 到 `n-1` ，加载 trie 时使用 mmap，API 支持以下操作:
+
+|操作|时间复杂度| 说明 |
+----|----|
+反向搜索|通过 ID 得到相应的 key|
+正向搜索|O(keylen)| 按 key **精确**搜索（搜索得到相应的ID）|
+前缀搜索|搜索过程 O(prefix\_len)<br>枚举过程 O(sum(keylen)|按 key **前缀**搜索，搜索匹配的前缀长度，<br>搜索到以后可枚举匹配该前缀的候选 (key,ID) 集合）|
+正则表达式搜索|不同的正则表达式，<br>时间复杂度差异较大，<br>最快O(regex\_len)<br>最慢O(all\_key\_len*regex\_len)||
+
+|||
+
 | 选项 | 说明 |
 -----|-----|
 -M | 最长片段尺寸，一般不需要指定|
