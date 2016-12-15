@@ -7,7 +7,7 @@ Terark 的产品包括：
 
 ## terark 核心工具集
 
-[http://nark.cc/download/](terark 核心工具集下载)，在该下载列表中，核心工具集的名字是
+[terark 核心工具集下载](http://nark.cc/download/)，在该下载列表中，核心工具集的名字是
 - terark-fsa_all-Linux-x86_64-g++-**VERSION**-bmi2-0.tgz : 能在较旧的机器上使用
 - terark-fsa_all-Linux-x86_64-g++-**VERSION**-bmi2-1.tgz : 只能在 intel-haswell 或更新的机器上使用
 
@@ -30,5 +30,5 @@ root/samples/src| |
 
 |名称(详细描述链接)|功能描述  |
 -----|-----|
-[tools/bin/nlt_build.exe.md](nlt_build.exe)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索|
-[tools/bin/zbs_build.exe.md](zbs_build.exe)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并随机提取每条记录|
+[nlt_build.exe](tools/bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索|
+[zbs_build.exe](tools/bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并随机提取每条记录|
