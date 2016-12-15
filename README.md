@@ -30,5 +30,5 @@ root/samples/src| |
 
 |名称(详细描述链接)|功能描述  |
 -----|-----|
-[tools/bin/nlt_build.exe](nlt_build.exe)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索|
-[tools/bin/zbs_build.exe](zbs_build.exe)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并随机提取每条记录|
+[tools/bin/nlt_build.exe.md](nlt_build.exe)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索|
+[tools/bin/zbs_build.exe.md](zbs_build.exe)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并随机提取每条记录|
