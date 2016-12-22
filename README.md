@@ -41,7 +41,7 @@ root/samples/src| 示例代码 |
 我们的核心产品使用了 Succinct 数据结构，Succinct 数据结构的核心是 Rank Select， Rank Select 的性能至关重要。
 为了保证性能，我们自己实现了 Rank Select，比起最流行的开源实现([sdsl-lite](https://github.com/simongog/sdsl-lite))，我们的性能有巨大优势，以下是性能比较：
 
-纵坐标是单个操作的耗时，单位是纳秒，横坐标是各种 rank select 实现，`sdsl_v_mcl` 是 [sdsl-lite](https://github.com/simongog/sdsl-lite) 中最快的 rank select 实现。其余的是我们自己的不同实现。
+纵坐标是单个操作的耗时，单位是纳秒，横坐标是各种 rank select 实现，`sdsl_v_mcl` 是 [sdsl-lite](https://github.com/simongog/sdsl-lite) 中最快的 rank select 实现。其余的是我们自己的不同实现，包含 `_fast` 后缀的是加了一点额外优化的 inline 函数。
 
 图中文字显示有点问题，比较拥挤，最好点击图片，在浏览器新窗口中打开，会正常显示。
 
