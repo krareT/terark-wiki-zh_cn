@@ -35,3 +35,5 @@ root/samples/src| 示例代码 |
 
 
 其他命令行工具使用说明，可参见各命令的 usage help，详细说明我们会逐渐在该文档中完善。
+
+![rank_select](/graphs/rank_select.svg)
