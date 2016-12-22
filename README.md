@@ -43,4 +43,6 @@ root/samples/src| 示例代码 |
 
 纵坐标是单个操作的耗时，单位是纳秒，横坐标是各种 rank select 实现，`sdsl_v_mcl` 是 [sdsl-lite](https://github.com/simongog/sdsl-lite) 中最快的 rank select 实现。其余的是我们自己的不同实现。
 
+图中文字显示有点问题，比较拥挤，最好点击图片，在浏览器新窗口中打开，会正常显示。
+
 ![rank_select](https://cdn.rawgit.com/terark/terark-wiki-zh_cn/master/graphs/rank_select.svg)
