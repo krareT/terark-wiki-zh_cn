@@ -43,6 +43,9 @@ root/samples/src| 示例代码 |
 
 ### 测试机器配置
 
+<table><tbody>
+<tr>
+<td>
 |CPU | |
 |------|------|
 |CPU 数量 | 2
@@ -53,11 +56,16 @@ root/samples/src| 示例代码 |
 |CPU 核心数/线程数（总数）|16核32线程
 |CPU 缓存尺寸|20M
 |CPU bogomips<br>（反应cpu真实速度）|4793
-
+</td>
+<td>
 |内存 | |
 |------|------|
 |内存容量|64GB
 |内存频率|DDR4 1866 MHz
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ### 测试结果
