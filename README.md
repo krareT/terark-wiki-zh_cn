@@ -38,7 +38,7 @@ root/samples/src| 示例代码 |
 
 ## Rank Select 性能比较
 
-我们的核心产品使用了 Succinct 数据结构，Succinct 数据结构的核心是 Rank Select， Rank Select 的性能至关重要。
+我们的核心产品使用了 Succinct 数据结构，Succinct 数据结构的核心是 Rank Select，所以 Rank Select 的性能至关重要。
 为了保证性能，我们自己实现了 Rank Select，比起最流行的开源实现([sdsl-lite](https://github.com/simongog/sdsl-lite))，我们的性能有巨大优势，以下是性能测试结果：
 
 ### 测试机器配置
