@@ -1,6 +1,12 @@
 # ac\_build.exe
 
-```bash
+## Links
+* [AC 自动机的实现](http://nark.cc/p/?p=1453)
+* [发掘双数组Trie (Double Array Trie)的能力](http://nark.cc/p/?p=1480)
+
+## Usage Help
+
+```text
 Usage:
    rls/ac_build.exe Options [Input-Pattern-File]
 
