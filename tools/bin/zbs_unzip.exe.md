@@ -6,7 +6,7 @@ TODO:
 
 ## Usage Help
 ```text
-Usage: rls/zbs_unzip.exe Options Input-BlobStore-File [recId1 recId2 ...]
+Usage: zbs_unzip.exe Options Input-BlobStore-File [recId1 recId2 ...]
 Synopsis:
     If recId1 recId2 ... are provided, just unzip/extract the specified records
     Record id is 0-base, so the min record id is 0, not 1
