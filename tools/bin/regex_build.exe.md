@@ -7,6 +7,7 @@
 * [多正则表达式匹配（Multiple Regular Expression Matching）](http://nark.cc/p/?p=174)
 * [有多个初始状态的 DFA](http://nark.cc/p/?p=176)
 * [多正则表达式匹配的应用](http://nark.cc/p/?p=1428)
+* [一个很难的字符串问题](http://nark.cc/p/?p=153)
 
 ## Usage Help
 

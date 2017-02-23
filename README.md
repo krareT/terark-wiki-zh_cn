@@ -36,6 +36,7 @@ root/samples/src| 示例代码 |
 |[adfa_build.exe](tools/bin/adfa_build.exe.md)|从输入的 Key 集合创建 ADFA(Acyclic DFA: 无环DFA)，输入文本文件，每行一个 Key，<br/>生成的 DFA 可以进行 Key 匹配（全匹配、前缀匹配），也可以通过[特殊的方式实现 Map 功能](http://nark.cc/p/?p=172)|
 [ac_build.exe](tools/bin/ac_build.exe.md)|从文本形式的 Pattern 集合创建 AC 自动机，创建出来的 AC 自动机文件可以通过过 Terark 的专用 API 加载，并调用各种匹配函数<br/>输入的 Pattern 文件中，每行一个 Pattern，每个 Pattern 作为精确字符串匹配，单线程匹配性能可达每秒数百MB甚至上GB|
 [regex_build.exe](tools/bin/regex_build.exe.md)|从正则表达式集合创建多正则自动机，创建出来的多正则自动机文件可以通过过 Terark 的专用 API 加载，并调用各种匹配函数<br/>因为是多正则匹配，功能比 AC 自动机要强得多，但匹配性能比 AC 自动机要低一些|
+[pinyin_build.exe](tools/bin/pinyin_build.exe.md)|创建“根据拼音对汉字短语纠错”的自动机，demo 见 [nark.cc](http://nark.cc)<br/>生成的自动机可以通过 Terark 的专用 API 加载，并执行搜索和纠错|
 
 
 其他命令行工具使用说明，可参见各命令的 usage help，详细说明我们会逐渐在该文档中完善。
