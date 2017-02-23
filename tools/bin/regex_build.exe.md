@@ -3,7 +3,8 @@
 ## Links
 * [支持 并、交、差 的正则表达式引擎](http://nark.cc/p/?p=1280)
 * [规则引擎建库工具](http://nark.cc/p/?p=177)
-* [多正则表达式匹配 (Multiple Regular Expression Matching) 中的动态 DFA 算法](http://nark.cc/p/?p=178)
+* [多正则表达式匹配（Multiple Regular Expression Matching）中的动态 DFA 算法](http://nark.cc/p/?p=178)
+* [多正则表达式匹配（Multiple Regular Expression Matching）](http://nark.cc/p/?p=174)
 * [有多个初始状态的 DFA](http://nark.cc/p/?p=176)
 * [多正则表达式匹配的应用](http://nark.cc/p/?p=1428)
 
