@@ -11,7 +11,7 @@
 
 ```text
 Usage:
-   ../regex/rls/regex_build.exe Options [Input-Regex-File]
+   regex_build.exe Options [Input-Regex-File]
 
 Description:
    Compile multiple regular expressions into one DFA

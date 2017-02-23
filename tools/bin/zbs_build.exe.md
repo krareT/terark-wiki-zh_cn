@@ -2,7 +2,7 @@
 
 直接执行 zbs\_build.exe，输出如下帮助信息：
 ```
-Usage: %s Options Input-TXT-File
+Usage: zbs_build.exe Options Input-TXT-File
 Options:
   -h Show this help information
   -c checksumLevel: default 1, can be 0, 1, 2, 3
