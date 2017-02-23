@@ -32,6 +32,8 @@ root/samples/src| 示例代码 |
 -----|-----|
 [nlt_build.exe](tools/bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索<br>[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的索引(key)使用了该算法|
 [zbs_build.exe](tools/bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并按记录ID随机提取每条记录。[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的 value 压缩使用了该算法|
+[ac_build.exe](tools/bin/ac_build.exe.md)|从文本形式的 Pattern 集合创建 AC 自动机，创建出来的 AC 自动机文件可以通过过 Terark 的专用 API 加载，并调用各种匹配函数<br/>输入的 Pattern 文件中，每行一个 Pattern，每个 Pattern 作为精确字符串匹配，单线程匹配性能可达每秒数百MB甚至上GB|
+[regex_build.exe](tools/bin/regex_build.exe.md)|从正则表达式集合创建多正则自动机，创建出来的多正则自动机文件可以通过过 Terark 的专用 API 加载，并调用各种匹配函数<br/>因为是多正则匹配，功能比 AC 自动机要强得多，但匹配性能比 AC 自动机要低一些|
 
 
 其他命令行工具使用说明，可参见各命令的 usage help，详细说明我们会逐渐在该文档中完善。
