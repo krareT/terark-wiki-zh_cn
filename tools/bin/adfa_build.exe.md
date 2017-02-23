@@ -4,6 +4,8 @@
 * [把自动机用作 Key-Value 存储](http://nark.cc/p/?p=172)
 * [用自动机表达嵌套的数据](http://nark.cc/p/?p=1085)
 * [使用 MapReduce 创建超大巨型自动机](http://nark.cc/p/?p=960)
+* [DFA的实现](http://nark.cc/p/?p=163)
+* [自动机的一些算法和应用](http://nark.cc/p/?p=161)
 
 ## Usage Help
 ```text
