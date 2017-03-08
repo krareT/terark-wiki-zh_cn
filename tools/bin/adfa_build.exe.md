@@ -51,3 +51,7 @@ Options:
       WalkMethod should be BFS/DFS/PFS, default is PFS
       WalkMethod has no effect when building Louds-DFA-File, which is always BFS
 ```
+
+## Description
+Option `-U` and `-u` use LOUDS succinct encoding, this will generate very small dfa file,
+for `url`, or file path test(`find / | adfa_build.exe ...`), the compression rate may up to 100x.
