@@ -7,7 +7,7 @@
 
 直接执行 nlt\_build.exe，输出如下帮助信息：
 ```
-Usage: %s Options Input-TXT-File
+Usage: nlt_build.exe Options Input-TXT-File
 Options:
     -h Show this help information
     -M maxFragLen
