@@ -33,7 +33,7 @@ If Input-TXT-File is omitted, use stdin
 反向搜索|`O(keylen)`| 通过 ID 得到相应的 key|
 正向搜索|`O(keylen)`| 通过 key **精确搜索**（得到相应的 ID）|
 范围搜索|`O(keylen)`| 通过 iterator 支持，相当于 `std::map<string,...>::lower_bound(key)`<br>可正向/反向遍历，相当于 `bidirectional_iterator`|
-前缀搜索|搜索过程 `O(prefix_len)`<br>输出过程 `O(sum(result_keylen))`|按 key **前缀**搜索，搜索匹配的前缀长度，<br>搜索到以后可枚举匹配该前缀的候选 (key,ID) 集合）|
+前缀搜索|搜索过程 `O(prefix_len)`<br>输出过程 `O(sum(result_keylen))`|按 key **前缀**搜索，搜索匹配的前缀长度，<br>搜索到以后可输出匹配该前缀的候选 (key,ID) 集合）|
 正则表达式<br>搜索|最快 `O(regex_len)`<br>最慢 `O(all_key_len*regex_len)`|不同的正则表达式，时间复杂度差异较大<br>正则表达式头部不确定性越大（例如`.*abc`），耗时越大|
 
 ## 命令行详解
