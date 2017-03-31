@@ -27,8 +27,8 @@ root/samples/src| 示例代码 |
 
 |名称|功能描述  |
 -----|-----|
-[nlt_build.exe](bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索<br>[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的索引(key)使用了该算法<br/>该算法实践了 Terark 提出的 <span style="color:purple;font-style:italic;font-weight:bold;">CO-Index</span> (<span style="color:purple; font-style:italic; font-weight:bold">C</span>ompressed <span style="color:purple; font-style:italic; font-weight:bold">O</span>rdered <span style="color:purple; font-style:italic; font-weight:bold">Index</span>) 概念|
-[zbs_build.exe](bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并按记录ID随机提取每条记录。[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的 value 压缩使用了该算法<br/>该算法实践了 Terark 提出的 <span style="color:purple; font-style:italic; font-weight:bold">PA-Zip</span>(<span style="color:purple; font-style:italic; font-weight:bold">P</span>oint <span style="color:purple; font-style:italic; font-weight:bold">A</span>ccessible <span style="color:purple; font-style:italic; font-weight:bold">Zip</span>)|
+[nlt_build.exe](bin/nlt_build.exe.md)|Terark 嵌套Trie树创建(针对 Key )，压缩后的文件可以通过 Terark 的专用 API 加载，并进行搜索<br>[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的索引(key)使用了该算法<br/>该算法实践了 Terark 提出的 **CO-Index** (**C**ompressed **O**rdered **Index**) 概念|
+[zbs_build.exe](bin/zbs_build.exe.md)|Terark 数据库全局压缩(针对 Value )，压缩后的文件可以通过 Terark 的专用 API 加载，并按记录ID随机提取每条记录。[terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) 的 value 压缩使用了该算法<br/>该算法实践了 Terark 提出的 **PA-Zip**(**P**oint **A**ccessible **Zip**)|
 [zbs_unzip.exe](bin/zbs_unzip.exe.md)|全部解压(或定点提取)由 [zbs_build.exe](bin/zbs_build.exe.md) 压缩的数据，也可用作 benchmark|
 [fplcat.exe](bin/fplcat.exe.md)|将多个文件打包在一起，以便使用 [zbs_build.exe](bin/zbs_build.exe.md) 进行压缩，打包出来的文件传递给 [zbs_build.exe](bin/zbs_build.exe.md) 时，需要指定 -B 参数|
 |[adfa_build.exe](bin/adfa_build.exe.md)|从输入的 Key 集合创建 ADFA(Acyclic DFA: 无环DFA)，输入文本文件，每行一个 Key，<br/>生成的 DFA 可以进行 Key 匹配（全匹配、前缀匹配），也可以通过[特殊的方式实现 Map 功能](http://nark.cc/p/?p=172)|
