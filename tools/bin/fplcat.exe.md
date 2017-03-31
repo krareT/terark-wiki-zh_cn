@@ -14,5 +14,5 @@ Usage: fplcat.exe Options [Input-File-List]
 ## Package many many files and compress by zbs_build.exe
 ```bash
 find some/dir | fplcat.exe -o package.pkg
-zbs_build.exe -S 0.03 -o package.zbs package.pkg
+zbs_build.exe -B -S 0.03 -o package.zbs package.pkg
 ```
