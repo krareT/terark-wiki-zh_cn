@@ -10,7 +10,7 @@
 
 ## 目录
 - 产品列表
-  - [TerarkDB](https://github.com/Terark/terark-db/wiki)：基于 RocksDB，使用 Terark 核心技术的存储引擎
+  - 最核心的　[TerarkDB](https://github.com/Terark/terark-db/wiki)：基于 RocksDB，使用 Terark 核心技术的存储引擎
   - [Mongo on TerarkDB](https://github.com/Terark/mongo-on-terarkdb/wiki)：基于 TerarkDB 存储引擎的 MongoDB 版本，通过 mongo-rocks 实现
   - [MySQL on TerarkDB](https://github.com/Terark/mysql-on-terarkdb/wiki)：基于 TerarkDB 存储引擎的 MySQL 版本，通过 my-rocks 实现
 - [Terark 核心工具集](tools/tools.md)
