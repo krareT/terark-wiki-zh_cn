@@ -26,15 +26,15 @@ If Input-TXT-File is omitted, use stdin
 
 输入文件是文本，每行包含一个 key，重复 key 在输出的 trie 树中会被消重（但build过程中仍会占据重复的内存）。
 
-如果总共有n个不同的key，生成的 trie 树中，每个key对应一个ID，ID的范围是 `0` 到 `n-1` ，加载 trie 时使用 mmap，API 支持以下操作:
+如果总共有 n 个不同的 key，生成的 trie 树中，每个 key 对应一个 ID，ID 的范围是 `0` 到 `n-1` ，加载 trie 时使用 mmap，API 支持以下操作:
 
 |操作|时间复杂度| 说明 |
 ------|-------|------|
 反向搜索|O(keylen)|通过 ID 得到相应的 key|
 正向搜索|O(keylen)| 按 key **精确**搜索（搜索得到相应的ID）|
 范围搜索|O(keylen)| 通过 iterator 支持，相当于 `std::map<string,...>::lower_bound(key)`<br>可正向/反向遍历，相当于 `bidirectional_iterator`|
-前缀搜索|搜索过程 O(prefix\_len)<br>枚举过程 `O(sum(result_keylen))`|按 key **前缀**搜索，搜索匹配的前缀长度，<br>搜索到以后可枚举匹配该前缀的候选 (key,ID) 集合）|
-正则表达式搜索|最快O(regex\_len)<br>最慢`O(all_key_len*regex_len)`|不同的正则表达式，时间复杂度差异较大<br>正则表达式头部不确定性越大（例如`.*abc`），耗时越大|
+前缀搜索|搜索过程 `O(prefix\_len)`<br>输出过程 `O(sum(result_keylen))`|按 key **前缀**搜索，搜索匹配的前缀长度，<br>搜索到以后可枚举匹配该前缀的候选 (key,ID) 集合）|
+正则表达式<br>搜索|最快 `O(regex\_len)`<br>最慢 `O(all_key_len*regex_len)`|不同的正则表达式，时间复杂度差异较大<br>正则表达式头部不确定性越大（例如`.*abc`），耗时越大|
 
 ## 命令行详解
 | 选项 | 说明 |
