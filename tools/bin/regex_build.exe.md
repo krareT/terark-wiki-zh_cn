@@ -1,6 +1,6 @@
 # regex\_build.exe
 
-该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
+该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
 
 ## Links
 * [支持 并、交、差 的正则表达式引擎](http://nark.cc/p/?p=1280)
