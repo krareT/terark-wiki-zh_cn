@@ -5,13 +5,29 @@
 
 using namespace terark;
 
+void usage(const char* prog) {
+	fprintf(stderr, R"EOS(usage: %s Options [startKey]"
+Options:
+  -i DFA-File
+     specify input DFA-File
+  -b
+     run as benchmark, do not print output for each key,
+     but print time and speed on finish
+
+  startKey is optional,
+  if specified, start at startKey,
+  if not specified, start at first key
+
+)EOS", prog);
+}
+
 int main(int argc, char* argv[]) {
 	const char* ifile = NULL;
 	bool benchmark = false;
 	profiling pf;
 	for (int opt=0; (opt = getopt(argc, argv, "i:b")) != -1; ) {
 		switch (opt) {
-			case '?': return 3;
+			case '?': usage(argv[0]); return 3;
 			case 'b': benchmark = true; break;
 			case 'i': ifile = optarg; break;
 		}

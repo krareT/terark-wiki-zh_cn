@@ -8,6 +8,19 @@
 
 using namespace terark;
 
+void usage(const char* prog) {
+	fprintf(stderr, R"EOS(usage: %s Options
+Options:
+
+  -i AC-Automata-File
+     AC-Automata-File is a file built by `ac_build.exe` from a set of patterns
+
+  -f TXT-File
+     a text file to be scaned, if omitted, read from stdin
+
+)EOS", prog);
+}
+
 struct OnHit {
 	void operator()(size_t endpos, const uint32_t* words, size_t cnt, size_t state) const {
 		for (size_t i = 0; i < cnt; ++i) {
@@ -39,7 +52,7 @@ int main(int argc, char* argv[]) {
 	const char* txt_file = NULL;
 	for (int opt=0; (opt = getopt(argc, argv, "i:f:")) != -1; ) {
 		switch (opt) {
-			case '?': return 3;
+			case '?': usage(argv[0]); return 3;
 			case 'i': dfa_file = optarg; break;
 			case 'f': txt_file = optarg; break;
 		}

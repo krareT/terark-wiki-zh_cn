@@ -4,6 +4,34 @@
 
 using namespace terark;
 
+void usage(const char* prog) {
+	fprintf(stderr, R"EOS(usage: %s Options string1 string2 ...
+
+Options:
+
+  -d [delim]
+     Argument `delim` is optional, if specified delim is set as the argument,
+     if argument `delim` is omitted, delim is set as integer 256, this requires
+     sigma of the DFA to be at least 257.
+     If option '-d' is omitted, use '\t' as delim.
+
+  -i DFA-File
+
+  -l
+     use longest match(by `match_key_l`), if {"ab", "abc", "abcd"} are in DFA,
+     and string to match is "abcde", `match_key_l` will only match "abcd",
+     `match_key` will match all of { "ab", "abc", "abcd" }
+
+  -r [root_ch]
+     set root state as state_move(initial_state, root_ch)
+	 currently used for test pinyin_build with edit-distance
+
+  string1 string2 ...
+     multiple strings, used as parameters of match_key/match_key_l
+
+)EOS", prog);
+}
+
 int delim = '\t';
 
 struct OnMatch {
@@ -31,7 +59,7 @@ int main(int argc, char* argv[]) {
 	auchar_t root_ch = 257;
 	for (int opt=0; (opt = getopt(argc, argv, "d::i:lr::")) != -1; ) {
 		switch (opt) {
-		case '?': return 3;
+		case '?': usage(argv[0]); return 3;
 		case 'd':
 			if (optarg)
 				delim = optarg[0];
