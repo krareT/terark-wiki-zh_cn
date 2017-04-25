@@ -92,9 +92,9 @@ Bin-Meta-File format
 
 |代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
 |----|----|
-|[regex_allmatch.cpp](../../samples/src/regex_allmatch.cpp)|sample/bin/regex_allmatch.exe|
-|[regex_maxmatch.cpp](../../samples/src/regex_maxmatch.cpp)|sample/bin/regex_maxmatch.exe|
-|[regex_submatch.cpp](../../samples/src/regex_submatch.cpp)|sample/bin/regex_submatch.exe|
+|[regex_allmatch.cpp](../../samples/src/regex_allmatch.cpp)|`sample/bin/regex_allmatch.exe`|
+|[regex_maxmatch.cpp](../../samples/src/regex_maxmatch.cpp)|`sample/bin/regex_maxmatch.exe`|
+|[regex_submatch.cpp](../../samples/src/regex_submatch.cpp)|`sample/bin/regex_submatch.exe`|
 
 
 
