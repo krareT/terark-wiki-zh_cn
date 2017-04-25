@@ -1,5 +1,7 @@
 # nlt\_build.exe
 
+该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
+
 该程序生成一种压缩的字典树，生成的字典树可以通过 API 加载，并执行丰富的搜索功能。压缩，指的是的字典树占用的内存，比起构成字典树的那些 Key 的总字节数，压缩了多少倍。
 
   * 对于自然语言的词表，压缩率一般可以达到 3 到 5 倍

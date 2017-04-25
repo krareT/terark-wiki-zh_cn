@@ -1,5 +1,7 @@
 # pinyin_build.exe
 
+该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
+
 ## Links
 * [nark.cc 首页即拼音纠错 demo](http://nark.cc)
 

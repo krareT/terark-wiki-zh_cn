@@ -1,5 +1,7 @@
 # ac\_build.exe
 
+该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
+
 ## Links
 * [AC 自动机的实现](http://nark.cc/p/?p=1453)
 * [发掘双数组Trie (Double Array Trie)的能力](http://nark.cc/p/?p=1480)
