@@ -4,7 +4,7 @@
 
 ## Links
 * [AC 自动机的实现](http://nark.cc/p/?p=1453)
-* [发掘双数组Trie (Double Array Trie)的能力](http://nark.cc/p/?p=1480)
+* [发掘双数组 Trie (Double Array Trie) 的能力](http://nark.cc/p/?p=1480)
 
 ## Usage Help
 
