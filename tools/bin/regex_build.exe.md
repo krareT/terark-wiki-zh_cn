@@ -94,7 +94,7 @@ Bin-Meta-File format
 
 规则库的 DFA 创建好以后，可以使用下面的测试程序进行性能测试，测试工具的具体用法，可以参考下表中的**代码**链接。
 
-测试程序已包含在 package 的 sample/bin 目录，代码同时也在 package 中的 `sample/src` 目录。
+编译好的测试程序包含在 package 的 `sample/bin` 目录，下面的代码同时也包含在 package 中的 `sample/src` 目录。
 
 |代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
 |----|----|
