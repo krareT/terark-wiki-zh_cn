@@ -41,3 +41,14 @@ Notes:
    word_id will be set as bytes lexicalgraphical ordinal number.
    word_id maybe named as pattern_id somewhere else.
 ```
+
+## 示例程序
+
+Pattern 库的 AC 自动机创建好以后，可以使用下面的测试程序进行性能测试，测试工具的具体用法，可以参考下表中的**代码**链接。
+
+编译好的测试程序包含在 package 的 `sample/bin` 目录，下面的代码同时也包含在 package 中的 `sample/src` 目录。
+
+|代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
+|----|----|
+|[ac_scan.cpp](../../samples/src/ac_scan.cpp)|`sample/bin/ac_scan.exe`|
+
