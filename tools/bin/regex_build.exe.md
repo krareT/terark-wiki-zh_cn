@@ -90,6 +90,8 @@ Bin-Meta-File format
 
 ## 运行匹配测试程序
 
+测试程序已包含在 package 的 sample/bin 目录，代码同时也在 package 中的 `sample/src` 目录。
+
 |代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
 |----|----|
 |[regex_allmatch.cpp](../../samples/src/regex_allmatch.cpp)|`sample/bin/regex_allmatch.exe`|
