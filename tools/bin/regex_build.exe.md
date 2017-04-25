@@ -88,6 +88,13 @@ Bin-Meta-File format
    Column 5: String  copy of full Input-Regex-File line
 ```
 
-## 运行匹配测试
+## 运行匹配测试程序
+
+|代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
+|----|----|
+|[regex_allmatch.cpp](../../samples/src/regex_allmatch.cpp)|sample/bin/regex_allmatch.exe|
+|[regex_maxmatch.cpp](../../samples/src/regex_maxmatch.cpp)|sample/bin/regex_maxmatch.exe|
+|[regex_submatch.cpp](../../samples/src/regex_submatch.cpp)|sample/bin/regex_submatch.exe|
+
 
 
