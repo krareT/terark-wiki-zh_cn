@@ -9,7 +9,7 @@
 
 直接执行 nlt\_build.exe，输出如下帮助信息：
 ```
-Usage: nlt_build.exe Options Input-TXT-File
+Usage: rls/nlt_build.exe Options Input-TXT-File
 Options:
     -h Show this help information
     -M maxFragLen
@@ -17,10 +17,34 @@ Options:
     -o Output-Trie-File
     -g Output-Graphviz-Dot-File
     -b BenchmarkLoop : Run benchmark
+    -w BenchmarkLoop : Run benchmark with dict_index
     -s indicate that input is sorted, the top level sort will be omitted
     -B Input is binary(bson) data
+    -6 Input is base64 encoded data
+    -U StrVecType, can be one of:
+         x: SortableStrVec, this is the default
+         s:   SortedStrVec, -s must also be specified, for double check
+         z: ZoSortedStrVec, -s must also be specified, for double check
+         f: FixedLenStrVec
+         +--------------------------------------------------------+
+         |              |Memory Usage|Var Key Len|Can Be UnSorted?|
+         |SortableStrVec|    High    |    Yes    |     Yes        |
+         |  SortedStrVec|   Medium   |    Yes    |!Must be Sorted!|
+         |ZoSortedStrVec|    Low     |    Yes    |!Must be Sorted!|
+         |FixedLenStrVec|    Lowest  |    No     |     Yes        |
+         +--------------------------------------------------------+
+          ZoSortedStrVec is slower than SortedStrVec(20% ~ 40% slower).
+          When using ZoSortedStrVec, you should also use -T 4@/path/to/tmpdir,
+          otherwise warning will be issued.
     -T TmpDir, if specified, will use less memory
        TmpLevel@TmpDir, TmpLevel is 0-9
+    -R RankSelect implementation, can be:
+         se-256
+         se-512
+         il-256
+         m-se-512
+         m-il-256
+         m-xl-256, this is the default
 If Input-TXT-File is omitted, use stdin
 ```
 
@@ -49,3 +73,4 @@ If Input-TXT-File is omitted, use stdin
 -s | 如果输入数据已经排序（按 ByteArray 字典序，`env LC_ALL=C sort` 命令行的默认排序），<br>指定该参数可以省略嵌套树最外层的排序，提高创建速度，对生成的 trie 树无任何影响|
 -B | 输入是 BSON 数据，而不是文本|
 -T | 指定一个临时目录，如果输入数据很大（几十 GB），创建过程中可能会消耗较多内存，<br>指定该参数可以把一部分并非必须时刻驻留内存的数据保存在临时文件中 |
+-U | StrVecType, 参考 usage
