@@ -71,6 +71,6 @@ If Input-TXT-File is omitted, use stdin
 -b | 如果想运行 benchmark 看一下性能，可以增加该参数，数据尺寸很大时，指定 1 即可|
 -g | 输出 graph-viz 的 dot 文件，用于查看树的图形表示|
 -s | 如果输入数据已经排序（按 ByteArray 字典序，`env LC_ALL=C sort` 命令行的默认排序），<br>指定该参数可以省略嵌套树最外层的排序，提高创建速度，对生成的 trie 树无任何影响|
--B | 输入是 BSON 数据，而不是文本|
+-B | 输入是 BSON 数据，而不是文本，可用于二进制 Key，不验证 BSON 数据的合法性，只要求按照 BSON 的格式：前 4 个字节是 LittleEndian 的 int32 ，表示数据的长度，特别注意：该长度包含 4 字节的 int32 本身|
 -T | 指定一个临时目录，如果输入数据很大（几十 GB），创建过程中可能会消耗较多内存，<br>指定该参数可以把一部分并非必须时刻驻留内存的数据保存在临时文件中 |
 -U | StrVecType, 参考 usage
