@@ -4,7 +4,7 @@
 
 ## terark 核心工具集
 
-[terark 核心工具集下载](https://www.terark.com/download/tools/latest)，在该下载列表中，核心工具集的名字是
+[terark 核心工具集下载](http://www.terark.com/download/tools/latest)，在该下载列表中，核心工具集的名字是
 - terark-fsa_all-Linux-x86_64-g++-**VERSION**-bmi2-0.tgz : 能在较旧的机器上使用
 - terark-fsa_all-Linux-x86_64-g++-**VERSION**-bmi2-1.tgz : 只能在 intel-haswell 或更新的机器上使用
 
