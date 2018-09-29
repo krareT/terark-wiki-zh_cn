@@ -1,6 +1,6 @@
 # regex\_build.exe
 
-该程序位于 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](https://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
+该程序位于 [下载 package](http://terark.com/zh/download/tools/latest) 中的 `bin` 目录，要运行该程序，您需要将 [下载 package](http://terark.com/zh/download/tools/latest) 中的 `lib` 目录加入环境变量 `LD_LIBRARY_PATH` 。
 
 ## Links
 * [支持 并、交、差 的正则表达式引擎](http://nark.cc/p/?p=1280)
@@ -96,7 +96,7 @@ Bin-Meta-File format
 
 编译好的测试程序包含在 package 的 `sample/bin` 目录，下面的代码同时也包含在 package 中的 `sample/src` 目录。
 
-|代码|[package](https://terark.com/zh/download/tools/latest) 中可执行文件的路径|
+|代码|[package](http://terark.com/zh/download/tools/latest) 中可执行文件的路径|
 |----|----|
 |[regex_allmatch.cpp](../../samples/src/regex_allmatch.cpp)|`sample/bin/regex_allmatch.exe`|
 |[regex_maxmatch.cpp](../../samples/src/regex_maxmatch.cpp)|`sample/bin/regex_maxmatch.exe`|
