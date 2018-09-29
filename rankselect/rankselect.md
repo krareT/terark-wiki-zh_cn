@@ -27,7 +27,9 @@
 
 ### 测试结果
 
-纵坐标是单个操作的耗时，单位是纳秒，横坐标是各种 rank select 实现，`sdsl_v_mcl` 是 [sdsl-lite](https://github.com/simongog/sdsl-lite) 中最快的 rank select 实现。其余的是我们自己的不同实现，包含 `_fast` 后缀的是加了一点额外优化的 inline 函数。
+纵坐标是单个操作的耗时，单位是**纳秒**，横坐标是各种 rank select 实现，`sdsl_v_mcl` 是 [sdsl-lite](https://github.com/simongog/sdsl-lite) 中最快的 rank select 实现。其余的是我们自己的不同实现，包含 `_fast` 后缀的是加了一点额外优化的 inline 函数。
+
+从图中可以看到，内存墙（4G vs 32K bits）是最大的性能瓶颈。
 
 图中文字显示有点问题，比较拥挤，最好点击图片，在浏览器新窗口中打开，会正常显示。
 
